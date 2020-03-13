@@ -1,0 +1,14 @@
+  function tinyUrlApi {
+  
+  
+    var url = "http://tinyurl.com/api-create.php?url=http://www.example.com"
+  
+    var getRequest = UrlFetchApp.fetch(url)
+    
+    var shortenedLink = getRequest.getContentText()
+  
+    return shortenedLink
+    
+    //shortenedLink will return http://tinyurl.com/d4px9f
+  
+  }
